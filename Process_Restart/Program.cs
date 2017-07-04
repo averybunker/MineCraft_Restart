@@ -38,7 +38,7 @@ namespace Process_Restart
 		{
 			try
 			{
-				var procStartInfo = new ProcessStartInfo("c:\\Users\\Administrator\\Desktop\\Modded Minecraft Server")
+				var procStartInfo = new ProcessStartInfo("c:\\Users\\Administrator\\Desktop\\Modded Minecraft Server\\Server_Modded.bat")
                 {
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
