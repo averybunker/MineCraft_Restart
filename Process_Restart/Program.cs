@@ -24,7 +24,8 @@ namespace Process_Restart
 			foreach (Process p in processCollection)
 			{
 				Console.WriteLine(p.ProcessName);
-                if(p.ProcessName == "iTerm2")
+
+                if(p.ProcessName == "java")
                 {
                     amIrunning = true;
                 }
@@ -37,7 +38,7 @@ namespace Process_Restart
 		{
 			try
 			{
-				var procStartInfo = new ProcessStartInfo("/Applications/Calculator.app/Contents/MacOS/Calculator")
+				var procStartInfo = new ProcessStartInfo("c:\\Users\\Administrator\\Desktop\\Modded Minecraft Server")
                 {
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
