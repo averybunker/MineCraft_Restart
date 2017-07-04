@@ -9,7 +9,7 @@ namespace Process_Restart
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
             ListProcesses();
 			if (amIrunning == false)
 			{
@@ -42,7 +42,7 @@ namespace Process_Restart
                 {
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
-					CreateNoWindow = false
+					CreateNoWindow = false,
 				};
 
 				var proc = new Process { StartInfo = procStartInfo };
